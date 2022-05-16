@@ -1,5 +1,39 @@
 @charset "utf-8";
+.nav {
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+.slide-ls {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300vw;
+}
+.slide-item {
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem 5rem;
+}
 
-body {
-    background-color: aqua;
+.slide-pdf{
+    background-color: #333;
+}
+.slide-DC{
+    background-color: #dd1f8e;
+}
+
+.slide-PR{
+    background-color: #00a7e2;
+}
+
+.slide-AE{
+    background-color: #620294;
+}
+
+.slide-AI{
+    background-color: #ee9a10;
+}
+.slide-DW{
+    background-color: #84c922;
 }

@@ -5,6 +5,13 @@
     display: flex;
     flex-direction: column;
 }
+.mask {
+    overflow: hidden;
+}
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
 .slide-ls {
     display: flex;
     flex-wrap: wrap;

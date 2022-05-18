@@ -23,15 +23,15 @@
 <body>
     <div class="slide mask">
         <nav class="nav">
-            <input type="button" value="1">
-            <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="4">
-            <input type="button" value="5">
-            <input type="button" value="6">
+            <input class="nav-btn" type="button" value="1">
+            <input class="nav-btn" type="button" value="2">
+            <input class="nav-btn" type="button" value="3">
+            <input class="nav-btn" type="button" value="4">
+            <input class="nav-btn" type="button" value="5">
+            <input class="nav-btn" type="button" value="6">
         </nav>
 
-        <div class="slide-ls">
+        <div class="slide-ls" style="position: relative; left: -100%;">
             <section class="slide-item slide-pdf">
                 <header class="pd-head">
                     <h2 class="pd-title">最佳的 PDF 工具現在更加緊密連結</h2>
@@ -43,6 +43,32 @@
                         PDF，以輕鬆地分享、傳送給多位審核者，並在單一檔案中線上收集注釋。
                     </p>
                 </article>
+                <ul class="pic-ls row">
+                    <li class="pic-item">
+                        <a class="hover-overlay hover-scale hover-icon hover-transition" href="./images/pdf_1_lg.png">
+                            <img class="img-resp" src="./images/pdf_1_sm.png" width="250px" height="141px" alt="">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </li>
+                    <li class="pic-item">
+                        <a class="hover-overlay hover-scale hover-icon hover-transition" href="./images/pdf_2_lg.png">
+                            <img class="img-resp" src="./images/pdf_2_sm.png" width="250px" height="141px" alt="">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </li>
+                    <li class="pic-item">
+                        <a class="hover-overlay hover-scale hover-icon hover-transition" href="./images/pdf_3_lg.png">
+                            <img class="img-resp" src="./images/pdf_3_sm.png" width="250px" height="141px" alt="">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </li>
+                    <li class="pic-item">
+                        <a class="hover-overlay hover-scale hover-icon hover-transition" href="./images/pdf_4_lg.png">
+                            <img class="img-resp" src="./images/pdf_4_sm.png" width="250px" height="141px" alt="">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </li>
+                </ul>
             </section>
             <section class="slide-item slide-DC">
                 <header class="pd-head">
@@ -55,6 +81,20 @@
                         PDF，以輕鬆地分享、傳送給多位審核者，並在單一檔案中線上收集注釋
                     </p>
                 </article>
+                <ul class="pic-ls row">
+                    <li class="pic-item">
+                        <a class="hover-scale hover-icon hover-transition" href="./images/pdf_1_lg.png">
+                            <img class="img-resp" src="./images/pr_1_sm.png" width="250px" height="141px" alt="">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </li>
+                    <li class="pic-item">
+                        <a class="hover-scale hover-icon hover-transition" href="./images/pdf_2_lg.png">
+                            <img class="img-resp" src="./images/pr_2_sm.png" width="250px" height="141px" alt="">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </li>
+                </ul>
             </section>
             <section class="slide-item slide-PR">
                 <header class="pd-head">
@@ -67,6 +107,24 @@
                     <p class="pd-desc">好萊塢電影製作人、電視編輯人員、YouTuber 網紅、錄影師等每個要訴說故事的人都是使用 Premiere Pro，也包括您。
                     </p>
                 </article>
+                <ul class="pic-ls row">
+                    <li class="pic-item">
+                        <a class="hover-overlay hover-scale hover-transition" href="./images/pdf_1_lg.png">
+                            <img class="img-resp" src="./images/ps_1_sm.png" width="250px" height="141px" alt="">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </li>
+                    <li class="pic-item">
+                        <a class="hover-overlay hover-scale hover-transition" href="./images/pdf_2_lg.png">
+                            <img class="img-resp" src="./images/ps_2_sm.png" width="250px" height="141px" alt="">
+                        </a>
+                    </li>
+                    <li class="pic-item">
+                        <a class="hover-overlay hover-scale hover-transition" href="./images/pdf_3_lg.png">
+                            <img class="img-resp" src="./images/ps_3_sm.png" width="250px" height="141px" alt="">
+                        </a>
+                    </li>
+                </ul>
             </section>
             <section class="slide-item slide-AE">
                 <header class="pd-head">
@@ -105,6 +163,8 @@
 
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/all.js"></script>
 </body>
 
 </html>

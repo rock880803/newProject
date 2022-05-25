@@ -6,6 +6,11 @@ const $btn3 = $('.nav-btn').eq(2);
 const $btn4 = $('.nav-btn').eq(3);
 const $btn5 = $('.nav-btn').eq(4);
 const $btn6 = $('.nav-btn').eq(5);
+const $ul = $('#SlideLs');
+const $Nav = $('#Nav');
+
+const $afancybox = $('.pic-item > a');
+
 // console.log(isMobile);
 
 $btn1.addClass('js-nav-btn');
@@ -15,8 +20,47 @@ $('.nav-btn').click(function(){
 });
 
 if(isMobile){
-    $('#SlideLs .slide-item').scroll(function(){
+    $ul.find('.slide-item').scroll(function(){
         console.log($(this).scrollTop());
-        $(this).scrollTop() == 0 ? $('#Nav').removeClass('js-nav') :  $('#Nav').addClass('js-nav') 
+        $(this).scrollTop() == 0 ? $Nav.removeClass('js-nav') :  $Nav.addClass('js-nav') 
     });
 }
+
+$btn1.click(function(){
+    $ul.css({
+        left: 0,
+        top: 0,
+    })
+});
+$btn2.click(function(){
+    $ul.css({
+        left: '-100%',
+        top: 0,
+    })
+});
+$btn3.click(function(){
+    $ul.css({
+        left: '-200%',
+        top: 0,
+    })
+});
+$btn4.click(function(){
+    $ul.css({
+        left: 0,
+        top: '-100%',
+    })
+});
+$btn5.click(function(){
+    $ul.css({
+        left: '-100%',
+        top: '-100%',
+    })
+});
+$btn6.click(function(){
+    $ul.css({
+        left: '-200%',
+        top: '-100%',
+    })
+});
+
+$afancybox.fancybox();

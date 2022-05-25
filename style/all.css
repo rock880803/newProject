@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Gill Sans', '微軟正黑體', 'Trebuchet MS', sans-serif;
-
+    line-height: 1.2;
 }
 
 /* help */
@@ -33,6 +33,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 300vw;
+    position: relative;
+    left: 0;
+    top: 0;
+
+    transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .slide-item {
@@ -95,7 +100,7 @@ body {
 
 .pic-item {
     padding: 12px;
-    width: 33.33%;
+    /* width: 33.33%; */
 }
 
 .pic-item a {
@@ -137,7 +142,7 @@ body {
 /* Module hover-overlay */
 .hover-overlay {
     position: relative;
-    display: block;
+    display: inline-block;
 }
 
 .hover-overlay:hover::after {
@@ -177,13 +182,10 @@ body {
 .hover-scale {
     position: relative;
     display: block;
-}
-
-.hover-scale {
     overflow: hidden;
 }
 
-.hover-scale:hover img {
+.hover-scale:hover .img-resp {
     transform: scale(1.2);
 }
 

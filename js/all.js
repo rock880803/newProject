@@ -63,4 +63,29 @@ $btn6.click(function(){
     })
 });
 
-$afancybox.fancybox();
+$afancybox.fancybox({
+    loop: true,
+    keyboard: true,
+    animationDuration: 500,
+    transitionDuration: 800,
+    // transitionEffect: 'circular',
+    // slideShow: {
+    //     autoStart:true,
+    //     speed: 2000,
+    // },
+    buttons:[
+        'zoom',
+        'share',
+        'download',
+        'slideShow',
+        'thumbs',
+        'close',
+    ],
+    media: {
+        youtube: {
+            params: {
+                autoplay: false,
+            }
+        }
+    }
+});
